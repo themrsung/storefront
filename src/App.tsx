@@ -1,8 +1,16 @@
 import React from "react"
+import ClientState from "./classes/state/ClientState"
+import Router from "./components/router/Router"
 
 class App extends React.PureComponent {
+    private clientState: ClientState = new ClientState(this)
+
     render() {
-        return <></>
+        return (
+            <>
+                <Router clientState={this.clientState} />
+            </>
+        )
     }
 }
 
