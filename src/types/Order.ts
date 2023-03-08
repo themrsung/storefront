@@ -1,13 +1,16 @@
 import OrderStatus from "../enums/OrderStatus"
 import Address from "./Address"
-import CartItem from "./CartItem"
+import OrderItem from "./OrderItem"
 
 type Order = {
     id: string
     userId: string
     date: Date
     address: Address
-    products: Array<CartItem>
+    products: Array<OrderItem>
+    priceTotal: number
+    shippingCost: number
+    totalCost: number
     status: OrderStatus
 }
 

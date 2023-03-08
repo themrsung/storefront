@@ -18,7 +18,8 @@ export default class UserApi {
                 country: Country.Korea,
                 postalCode: 0o5551
             },
-            cart: []
+            cart: [],
+            orders: []
         }
 
         return user
