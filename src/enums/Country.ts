@@ -1,3 +1,6 @@
+// Special thanks to @kyranjamie on GitHub
+// https://gist.github.com/kyranjamie/646386d5edc174e8b549111572897f81
+
 enum Country {
     Afghanistan = "AF",
     AlandIslands = "AX",
@@ -56,7 +59,7 @@ enum Country {
     CoteDIvoire = "CI",
     Croatia = "HR",
     Cuba = "CU",
-    Curaçao = "CW",
+    Curacao = "CW",
     Cyprus = "CY",
     CzechRepublic = "CZ",
     Denmark = "DK",
