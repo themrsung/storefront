@@ -1,5 +1,6 @@
 enum RouterPaths {
-    Home = "/"
+    Home = "/",
+    Product = "/product"
 }
 
 export default RouterPaths

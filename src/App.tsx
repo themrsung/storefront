@@ -5,6 +5,8 @@ import Router from "./components/router/Router"
 class App extends React.PureComponent {
     private clientState: ClientState = new ClientState(this)
 
+    componentDidMount(): void {}
+
     render() {
         return (
             <>
