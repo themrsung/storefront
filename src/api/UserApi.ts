@@ -1,4 +1,4 @@
-import { Country } from "../enums/Country"
+import Country from "../enums/Country"
 import User from "../types/User"
 
 export default class UserApi {

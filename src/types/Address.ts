@@ -1,4 +1,4 @@
-import { Country } from "../enums/Country"
+import Country from "../enums/Country"
 
 type Address = {
     streetOne: string
