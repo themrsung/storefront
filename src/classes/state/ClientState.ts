@@ -89,9 +89,9 @@ export default class ClientState {
     }
 
     addProductToCart(item: CartItem): void {
-        const cart = this.currentUser ? this.currentUser.cart : this.guestCart
+        const cart: Array<CartItem> = this.currentUser ? this.currentUser.cart : this.guestCart
 
-        const matchingItems = cart.filter(ci => ci.productId === item.productId)
+        const matchingItems: Array<CartItem> = cart.filter(ci => ci.productId === item.productId)
 
         if (matchingItems.length > 0) {
             matchingItems[0].quantity += item.quantity
@@ -101,7 +101,7 @@ export default class ClientState {
     }
 
     removeProductFromCart(item: CartItem): void {
-        const cart = this.currentUser ? this.currentUser.cart : this.guestCart
+        const cart: Array<CartItem> = this.currentUser ? this.currentUser.cart : this.guestCart
         const setCart = (c: Array<CartItem>): void => {
             if (this.currentUser) {
                 this.currentUser.cart = c
@@ -110,7 +110,7 @@ export default class ClientState {
             }
         }
 
-        const matchingItems = cart.filter(ci => ci.productId === item.productId)
+        const matchingItems: Array<CartItem> = cart.filter(ci => ci.productId === item.productId)
 
         if (matchingItems.length > 0) {
             const quantity = matchingItems[0].quantity
